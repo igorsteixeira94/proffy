@@ -3,15 +3,10 @@
 <p align="center"><i>Sua plataforma de estudos online. Criada pela: RocketSeat para o Next Level Week#2</i></p>
 </p>
 
-
-[TOC]
-
-* [Como Usar](#como-usar)
-* [Tecnologias](#rocket-tecnologias)
-* [Features](#features-implementadas)
-* [Screenshot](#screenshot)
-  * [Web](#web)
-  * [Mobile](#mobile)
+<h1 align="center">Índice</h1>
+ 
+[Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias) |  [Features](#features-implementadas) |  [Screenshot](#screenshot)
+:-------:                | ------:                            |:-------:                             | ------:
 
 
 
