@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  web:
+    build: ./web
+    command: yarn start
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - ./web:/usr/src/web
+      - /usr/src/web/node_modules
+    container_name: proffy_web
+    tty: true
+    
+  api:
+    build: ./server
+    command: yarn start
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./server:/usr/src/webapi
+      - /usr/src/webapi/node_modules
+    container_name: proffy_api

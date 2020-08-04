@@ -15,7 +15,10 @@
 🐋️ *via docker*
 
 ```shell
+git clone git@github.com:igorsteixeira94/proffy.git
+cd proffy
 docker-composer up
+##Ps.:server roda na porta 3333 e web na porta 3000, ainda não 'linkei' os dois containers.
 ```
 
  👨‍💻️ *sem docker*
