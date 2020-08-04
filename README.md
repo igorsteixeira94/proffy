@@ -3,6 +3,60 @@
 <p align="center"><i>Sua plataforma de estudos online. Criada pela: RocketSeat para o Next Level Week#2</i></p>
 </p>
 
+
+[TOC]
+
+* [Como Usar](#como-usar)
+* [Tecnologias](#🚀️-tecnologias)
+* [Features](#features-implementadas)
+* [Screenshot](#screenshot)
+  * [Web](#web)
+  * [Mobile](#mobile)
+
+
+
+## Como Usar
+
+🐋️ *via docker*
+
+```shell
+docker-composer up
+```
+
+ 👨‍💻️ *sem docker*
+
+```shell
+git clone git@github.com:igorsteixeira94/proffy.git
+cd proffy
+
+#Iniciando o Servidor localhost:3333
+cd server
+yarn install
+yarn start
+
+#Iniciando o Web localhost:3000
+cd web
+yarn install
+yarn start
+```
+
+
+
+## 🚀️ Tecnologias
+
+* 🏗️ BackEnd (Api):
+  * NodeJs;
+  * Express;
+  * Knex;
+  * Sqlite3;
+  * Cors;
+* 🏗️ FrontEnd (Web):
+  * ReacJs;
+  * React Router DOM;
+* 🏗️ Mobile ()
+
+
+
 ## Screenshot
 
 ### Web
@@ -17,3 +71,19 @@
 <img src="https://user-images.githubusercontent.com/47749249/89241878-7de37e00-d5d6-11ea-8dae-ebbcf8589565.png" width="300px" height="600px"/>
 <img src="https://user-images.githubusercontent.com/47749249/89241881-7f14ab00-d5d6-11ea-8a18-af0ec3504d77.png" width="300px" height="600px"/>
 </p>
+
+
+## Features Implementadas
+
+* BackEnd:
+  * [x] Criação de classes (Professor/aula/horários disponíveis);
+  * [x] Listagem de classes;
+  * [x] Criador de Conexões;
+  * [x] Listagem de conexões.
+
+* FrontEnd:
+  * [ ] Criação de classes (Professor/aula/horários disponíveis);
+  * [x] Listagem de classes;
+  * [ ] Criador de Conexões;
+  * [x] Listagem de conexões.
+
