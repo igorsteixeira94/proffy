@@ -1,6 +1,6 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/47749249/89240844-b897e700-d5d3-11ea-850d-5f95d08833c7.png" width="320px"/>
-<p><i>Sua plataforma de estudos online. Criada pela: RocketSeat para o Next Level Week#2</i></p>
+<p align="center"><i>Sua plataforma de estudos online. Criada pela: RocketSeat para o Next Level Week#2</i></p>
 </p>
 
 ## Screenshot
