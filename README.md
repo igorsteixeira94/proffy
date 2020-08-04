@@ -7,7 +7,7 @@
 [TOC]
 
 * [Como Usar](#como-usar)
-* [Tecnologias](#🚀️-tecnologias)
+* [Tecnologias](#rocket-tecnologias)
 * [Features](#features-implementadas)
 * [Screenshot](#screenshot)
   * [Web](#web)
@@ -41,8 +41,8 @@ yarn start
 ```
 
 
-
-## 🚀️ Tecnologias
+ 
+## :rocket: Tecnologias
 
 * 🏗️ BackEnd (Api):
   * NodeJs;
