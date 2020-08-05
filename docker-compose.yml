@@ -11,6 +11,8 @@ services:
       - /usr/src/web/node_modules
     container_name: proffy_web
     tty: true
+    links: 
+      - api
     
   api:
     build: ./server
