@@ -2,6 +2,11 @@
 <img src="https://user-images.githubusercontent.com/47749249/89240844-b897e700-d5d3-11ea-850d-5f95d08833c7.png" width="320px"/>
 <p align="center"><i>Sua plataforma de estudos online. Criada pela: RocketSeat para o Next Level Week#2</i></p>
 </p>
+<p align="center">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/igorsteixeira94/proffy?color=%236842c2">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/igorsteixeira94/proffy?color=%236842c2&logoColor=%236842c2" />
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/igorsteixeira94/proffy?color=%236842c2">
+</p>
 
 <h1 align="center">Índice</h1>
  
@@ -18,7 +23,7 @@
 git clone git@github.com:igorsteixeira94/proffy.git
 cd proffy
 docker-composer up
-##Ps.:server roda na porta 3333 e web na porta 3000, ainda não 'linkei' os dois containers.
+##Ps.Localhost rodando na porta 3000
 ```
 
  👨‍💻️ *sem docker*
@@ -42,13 +47,13 @@ yarn start
  
 ## :rocket: Tecnologias
 
-* 🏗️ BackEnd (Api):
+* BackEnd (Api):
   * NodeJs;
   * Express;
   * Knex;
   * Sqlite3;
   * Cors;
-* 🏗️ FrontEnd (Web):
+* FrontEnd (Web):
   * ReacJs;
   * React Router DOM;
 * 🏗️ Mobile ()
@@ -80,8 +85,8 @@ yarn start
   * [x] Listagem de conexões.
 
 * FrontEnd:
-  * [ ] Criação de classes (Professor/aula/horários disponíveis);
+  * [x] Criação de classes (Professor/aula/horários disponíveis);
   * [x] Listagem de classes;
-  * [ ] Criador de Conexões;
+  * [x] Criador de Conexões;
   * [x] Listagem de conexões.
 
