@@ -10,8 +10,8 @@
 
 <h1 align="center">Índice</h1>
 
-[Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias) |  [Features](#features-implementadas) |  [Screenshot](#screenshot)
-:-------:                | ------:                            |:-------:                             | ------:
+[Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias) |  [Features](#features-implementadas) |  [Screenshot](#screenshot) |  [Estrutura Pastas](#estrutura-pastas)
+:-------:                | ------:                            |:-------:                             | ------:                    | ------:
 
 
 
@@ -103,7 +103,7 @@ yarn start
 
 
 
-## Estrutura do Projeto
+## Estrutura Pastas
 
 ```bash
 $ tree
