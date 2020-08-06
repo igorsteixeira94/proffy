@@ -9,7 +9,7 @@
 </p>
 
 <h1 align="center">Índice</h1>
- 
+
 [Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias) |  [Features](#features-implementadas) |  [Screenshot](#screenshot)
 :-------:                | ------:                            |:-------:                             | ------:
 
@@ -44,7 +44,7 @@ yarn start
 ```
 
 
- 
+
 ## :rocket: Tecnologias
 
 * BackEnd (Api):
@@ -56,7 +56,9 @@ yarn start
 * FrontEnd (Web):
   * ReacJs;
   * React Router DOM;
-* 🏗️ Mobile ()
+* 🏗️ Mobile (Expo):
+  * React-Native;
+  * Expo-cli;
 
 
 
@@ -79,14 +81,143 @@ yarn start
 ## Features Implementadas
 
 * BackEnd:
-  * [x] Criação de classes (Professor/aula/horários disponíveis);
-  * [x] Listagem de classes;
-  * [x] Criador de Conexões;
-  * [x] Listagem de conexões.
-
+  * [x] Criar Proffys;
+  * [x] Listar Proffys;
+  * [x] Criar de Conexões;
+  * [x] Listar de Conexões.
+  
 * FrontEnd:
-  * [x] Criação de classes (Professor/aula/horários disponíveis);
-  * [x] Listagem de classes;
-  * [x] Criador de Conexões;
-  * [x] Listagem de conexões.
+  * [x] Landing Page;
+  * [x] Criar Proffys;
+  * [x] Listar Proffys;
+  * [x] Criar de Conexões;
+  * [x] Listar de Conexões.
+  
+* Mobile:
+
+  - [x] Landing Page;
+
+  * [ ] Listar Proffys;
+  * [ ] Favoritar Proffys;
+  * [ ] Listar de Conexões.
+
+
+
+## Estrutura do Projeto
+
+```bash
+$ tree
+.
+├── docker-compose.yml
+├── README.md
+├── mobile
+│   ├── app.json
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── favicon.png
+│   │   ├── icon.png
+│   │   └── splash.png
+│   ├── babel.config.js
+│   ├── package.json
+│   ├── src
+│   │   ├── assets
+│   │   │   ├── icons
+│   │   ├── components
+│   │   │   └── PageHeader
+│   │   │       ├── index.tsx
+│   │   │       └── styles.ts
+│   │   ├── pages
+│   │   │   ├── Favorites
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── GiveClasses
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── Landing
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── styles.ts
+│   │   │   └── TeacherList
+│   │   │       ├── index.tsx
+│   │   │       └── styles.ts
+│   │   ├── routes
+│   │   │   ├── AppStack.tsx
+│   │   │   └── StudyTabs.tsx
+│   │   └── @types
+│   │       └── index.d.ts
+│   ├── tsconfig.json
+│   └── yarn.lock
+├── server
+│   ├── Dockerfile
+│   ├── knexfile.ts
+│   ├── package.json
+│   ├── src
+│   │   ├── app.ts
+│   │   ├── controllers
+│   │   │   ├── ClassesController.ts
+│   │   │   └── ConnectionsController.ts
+│   │   ├── database
+│   │   │   ├── connection.ts
+│   │   │   └── migrations
+│   │   │       ├── 00_create_users.ts
+│   │   │       ├── 01_create_classes.ts
+│   │   │       ├── 02_create_class_schedule.ts
+│   │   │       └── 03_create_connection.ts
+│   │   ├── routes.ts
+│   │   ├── server.ts
+│   │   └── utils
+│   │       └── convertHourToMinutes.ts
+│   ├── tsconfig.json
+│   └── yarn.lock
+└── web
+    ├── Dockerfile
+    ├── package.json
+    ├── public
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   ├── logo192.png
+    │   ├── logo512.png
+    │   ├── manifest.json
+    │   └── robots.txt
+    ├── README.md
+    ├── src
+    │   ├── App.tsx
+    │   ├── assets
+    │   │   ├── images
+    │   │   │   ├── icons
+    │   │   └── styles
+    │   │       └── global.css
+    │   ├── components
+    │   │   ├── Input
+    │   │   │   ├── index.tsx
+    │   │   │   └── styles.css
+    │   │   ├── PageHeader
+    │   │   │   ├── index.tsx
+    │   │   │   └── styles.css
+    │   │   ├── Select
+    │   │   │   ├── index.tsx
+    │   │   │   └── styles.css
+    │   │   ├── TeacherItem
+    │   │   │   ├── index.tsx
+    │   │   │   └── styles.css
+    │   │   └── TextArea
+    │   │       ├── index.tsx
+    │   │       └── styles.css
+    │   ├── index.tsx
+    │   ├── pages
+    │   │   ├── Landing
+    │   │   │   ├── index.tsx
+    │   │   │   └── styles.css
+    │   │   ├── TeacherForm
+    │   │   │   ├── index.tsx
+    │   │   │   └── styles.css
+    │   │   └── TeacherList
+    │   │       ├── index.tsx
+    │   │       └── styles.css
+    │   ├── react-app-env.d.ts
+    │   ├── routes.tsx
+    │   └── services
+    │       └── api.tsx
+    ├── tsconfig.json
+    └── yarn.lock
+```
 
