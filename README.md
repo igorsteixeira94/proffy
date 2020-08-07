@@ -56,7 +56,7 @@ yarn start
 * FrontEnd (Web):
   * ReacJs;
   * React Router DOM;
-* 🏗️ Mobile (Expo):
+* Mobile (Expo):
   * React-Native;
   * Expo-cli;
 
@@ -73,8 +73,7 @@ yarn start
 
 ### Mobile
 <p align="center">
-<img src="https://user-images.githubusercontent.com/47749249/89241878-7de37e00-d5d6-11ea-8dae-ebbcf8589565.png" width="300px" height="600px"/>
-<img src="https://user-images.githubusercontent.com/47749249/89241881-7f14ab00-d5d6-11ea-8a18-af0ec3504d77.png" width="300px" height="600px"/>
+<img src="https://media.giphy.com/media/kydL0m1WW6ykRv5Okp/giphy.gif" width="300px" height="600px"/>
 </p>
 
 
@@ -95,11 +94,10 @@ yarn start
   
 * Mobile:
 
-  - [x] Landing Page;
-
-  * [ ] Listar Proffys;
-  * [ ] Favoritar Proffys;
-  * [ ] Listar de Conexões.
+  * [x] Landing Page;
+  * [x] Listar Proffys;
+  * [x] Favoritar Proffys;
+  * [x] Listar de Conexões.
 
 
 
