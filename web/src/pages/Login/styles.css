@@ -1,0 +1,66 @@
+#container-login{
+    width: 100vw;
+    height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+
+div.input-submit{
+    height: 56px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 13px;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+}
+input#mail{
+
+    border-bottom: 0;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+
+}
+input#senha{
+
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+}
+
+input{
+    border: 0;
+    font-size: 1.4rem;
+    padding: 0 1.6rem;
+    outline: 0;
+    background: var(--color-input-background);
+    
+}
+label{
+
+    pointer-events: none;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 14px;
+    top: 0;
+    left: 16px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    font-size: 10px;
+    margin-top: 0px;
+    color:var(--color-text-in-primary);
+
+}
+
+div.input-submit:focus-within::after{
+    width: 2px;
+    height: 32px;
+    content: '';
+    background:var(--color-primary-light);
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
