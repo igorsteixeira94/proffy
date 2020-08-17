@@ -1,0 +1,25 @@
+.container-header-fix{
+    width: 100vw;
+    height: 5rem;
+    background: var(--color-primary-dark);
+    color:var(--color-text-in-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2.4rem;
+
+    position: fixed;
+    top: 0;
+
+}
+.container-header-fix small{
+    font-size: 1.6rem;
+    font-family: Archivo;
+    font-weight: 700;
+}
+
+.container-header-fix > img:last-child{
+    width: 64px;
+    height: 100%;
+}
