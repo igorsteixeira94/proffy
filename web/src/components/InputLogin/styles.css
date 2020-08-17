@@ -4,7 +4,7 @@
 .input-login input{
     
     outline: none; /*Tirar a borda ao clicar no input*/
-    height: 48px;
+    height: 56px;
     width: 100%;
     padding: 0 1.6rem;
     border: none;
@@ -22,7 +22,7 @@
     /*Defino a posição absoluta do label e adiciono um delay para sua transição*/
     position: absolute;
     left: 1.6rem;
-    margin-top: 12px;
+    margin-top: 16px;
     
     transition: all .5s ease-out;
 }
@@ -30,8 +30,8 @@
 /*Quando o input for selecionado ou tiver algum elemento, manter o label lá em cima*/
 input:focus + label,
 input:not(:placeholder-shown) + label{
-    margin-top: 4px;
-    font-size: .8rem;
+    margin-top: 2px;
+    font-size: 1rem;
     color: var(--color-text-complement);
 }
 

@@ -1,6 +1,10 @@
 #container-login{
     width: 100vw;
     max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 a{
@@ -10,10 +14,8 @@ a{
 
 /*Estilização da capa de login*/
 #logo{
-    
-    width: 100vw;
     height: 40vh;
-    
+    width: 100vw;   
     background:var(--color-primary-dark) url(../../assets/images/success-background.svg) center no-repeat;
     background-size: contain;
     display: flex;
@@ -21,11 +23,13 @@ a{
     justify-content: center;
 
 }
+
 /*Proffy*/
 #logo img{
     width: 20rem;
     height: 10rem;
 }
+
 /*Sua plataforma de estudos online*/
 #logo h2{
     text-align: left;
@@ -37,8 +41,8 @@ a{
 /*Formulario de login*/
 #form{
     width: 100vw;
-    height: 60vh;
     padding: 0 3.2rem;
+    height: 60vh;
 }
 
 /*Fazer login e criar uma conta*/
@@ -76,6 +80,7 @@ input#password{
     align-items: center;
     justify-content: start;
 }
+
 #remember-pass input{
   all: unset;
   border: 1px solid var(--color-line-in-white);
@@ -92,14 +97,17 @@ input#password{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #remember-pass label{
     font-size: 1.2rem;
     margin-left: 0.4rem;
 }
+
 #remember-pass a{
     color:var(--color-text-complement);
 }
 
+/*Botão entrar*/
 button{
     border: 1px solid var(--color-line-in-white);
     background-color: var(--color-shape-disable);
@@ -109,8 +117,35 @@ button{
     height: 5rem;
     transition: all .2s linear;
 }
+
 button:hover{
     background-color: var(--color-secundary); 
     color: var(--color-button-text);
     font-weight: 600;
+}
+
+/*Breakpoints*/
+@media(min-width:600px){
+    #container-login{
+        flex-direction: row;
+    }
+    #form form{
+        max-width: 352px;
+        margin: 0 auto;
+    }
+    #logo{
+        height: 100vh;
+    }
+    #logo img{
+        width: 30rem;
+        height: 15rem;
+    }
+}
+
+@media(min-width:1500px){
+    #form form{
+        max-width: 600px;
+        width: 500px;
+        margin: 0 auto;
+    }
 }

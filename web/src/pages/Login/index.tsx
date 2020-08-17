@@ -3,10 +3,11 @@ import './styles.css';
 
 import logoImg from '../../assets/images/logo.svg';
 import InputLogin from '../../components/InputLogin';
+import { Link } from 'react-router-dom';
 
 function Login() {
     return (
-        <div id="container-login" className="container">
+        <div id="container-login" >
             <div id="logo">
                 <div>
                     <img src={logoImg} alt="Proffy"/>
@@ -14,11 +15,11 @@ function Login() {
                 </div>
             </div>
             <div id="form">
-                <div id="title-new">
-                    <h3>Fazer Login</h3>
-                    <a href="#">Criar uma conta</a>
-                </div>
                 <form action="">
+                    <div id="title-new">
+                        <h3>Fazer Login</h3>
+                        <Link to="/register">Criar uma conta</Link>
+                    </div>
                     <InputLogin name="email" label="E-mail"/>
                     <InputLogin name="password" label="Senha"/>
 
