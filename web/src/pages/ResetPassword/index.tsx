@@ -25,7 +25,7 @@ function ResetPassword() {
                     <h3>Eita, esqueceu <br/> sua senha?</h3>
                     <span>Não esquenta, vamos dar um jeito nisso.</span>
                     <InputLogin name="mail" label="E-mail" />
-                    <button id="btn-reset-password">Enviar</button>
+                    <Link to="reset-password-sucess" id="btn-reset-password">Enviar</Link>
                 </form>
             </div>
 

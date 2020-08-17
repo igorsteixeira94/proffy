@@ -31,7 +31,7 @@ function Login() {
                         <Link to="reset-password">Esqueci minha senha</Link>
                     </div>
 
-                    <button>Entrar</button>
+                    <Link className="btn-acess" to="landing">Entrar</Link>
                 </form>
             </div>
         </div>

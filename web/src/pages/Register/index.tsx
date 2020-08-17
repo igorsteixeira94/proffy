@@ -31,7 +31,7 @@ function Register() {
                         <InputLogin name="pass" label="Senha" />
                     </div>
 
-                    <button id="register">Concluir cadastro</button>
+                    <Link to="register-sucess" id="register">Concluir cadastro</Link>
                 </form>
             </div>
 
