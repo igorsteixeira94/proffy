@@ -28,7 +28,7 @@ function Login() {
                             <input type="checkbox" id="remember"/>
                             <label htmlFor="remember">Lembrar-me</label>
                         </div>
-                        <a href="#">Esqueci minha senha</a>
+                        <Link to="reset-password">Esqueci minha senha</Link>
                     </div>
 
                     <button>Entrar</button>
