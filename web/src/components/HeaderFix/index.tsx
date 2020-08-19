@@ -6,18 +6,21 @@ import logoImg from '../../assets/images/logo.svg';
 
 import './styles.css';
 
-interface HeaderFixProps{
-    title:string;
+interface HeaderFixProps {
+    title: string;
 }
 
-const HeaderFix:React.FC<HeaderFixProps> = ({title}) => {
+const HeaderFix: React.FC<HeaderFixProps> = ({ title }) => {
     return (
-        <div className="container-header-fix">
-            <Link to="/" id="btn-back">
-                <img src={backIcon} alt="Voltar" />
-            </Link>
-            <small>{title}</small>
-            <img src={logoImg} alt="Proffy"/>
+        <div className="header-fix">
+            <div id="header-content">
+                <Link to="/" id="btn-back">
+                    <img src={backIcon} alt="Voltar" />
+                </Link>
+                <small>{title}</small>
+                <img src={logoImg} alt="Proffy" />
+            </div>
+
         </div>
     );
 }

@@ -9,12 +9,34 @@
 
 #page-teacher-form main{
   background: var(--color-box-base);
-  width: 100%;
-  max-width: 74rem;
+  width: 90%;
+  max-width: 80rem;
   border-radius: 0.8rem;
   margin: -3.2rem auto 3.2rem;
   padding-top: 6.4rem;
   overflow: hidden;
+}
+#page-teacher-form main #profile{
+  display: flex;
+  flex-direction: column;
+}
+#page-teacher-form main #profile #profile-avatar{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+
+}
+#page-teacher-form main #profile h3{
+  font-family: Archivo;
+  color: var(--color-text-title);
+ 
+}
+
+#page-teacher-form main #profile img{
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 5rem;
+  margin-right: 1.6rem ;
 }
 
 #page-teacher-form main label{
@@ -27,8 +49,15 @@
 }
 #page-teacher-form main .schedule-item{
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  column-gap: 1.6rem;
+  grid-template-areas: 
+  "dia"
+  "from"
+  "to";
+  gap: 1.6rem;
+}
+#page-teacher-form main .schedule-item .select-block{
+  max-width: 100vw;
+  grid-area: dia;
 }
 #page-teacher-form main .schedule-item .input-block{
   margin-top: 0 !important;
@@ -112,7 +141,14 @@
 #page-teacher-form main footer button:hover{
   background: var(--color-secundary-dark);
 }
+@media(min-width:425px){
+  #page-teacher-form main .schedule-item{
 
+    grid-template-areas: 
+    "dia dia"
+    "from to";
+  }
+}
 @media(min-width:700px){
   
   #page-teacher-form{
@@ -140,5 +176,19 @@
     margin-top: 0;
 
   }
+  #page-teacher-form main .schedule-item{
+
+    grid-template-areas: 
+    "dia dia from to";
+  }
+  #page-teacher-form main #profile{
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  #page-teacher-form main #profile #profile-avatar{
+    width: 90%;
+  }
+
 
 }

@@ -9,16 +9,18 @@ import Input from '../../components/Input';
 import Textarea from '../../components/TextArea';
 import Select from '../../components/Select';
 import api from '../../services/api';
+import HeaderFix from '../../components/HeaderFix';
+import { phoneMask, moneyMask } from '../../utils/mask';
 
 function TeacherForm() {
   const history = useHistory();
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [bio, setBio] = useState('');
-  const [whatsapp, setWhatsapp] = useState('');
+  const [whatsapp, setWhatsapp] = useState('(  ) _  ____ - ____');
 
   const [subject, setSubject] = useState('');
-  const [cost, setCost] = useState('');
+  const [cost, setCost] = useState('R$ 0,00');
 
 
   const [scheduleItems, setScheduleItems] = useState([
@@ -50,6 +52,13 @@ function TeacherForm() {
     });
   }
 
+  function handleChangeWhatsapp(value: string) {
+    setWhatsapp(phoneMask(value));
+  }
+  function handleChangeCost(value: string) {
+    setCost(moneyMask(value));
+  }
+
   function setScheduleItemValue(position: number, field: string, value: string) {
     const newArray = scheduleItems.map((scheduleItem, index) => {
       if (index === position) {
@@ -60,8 +69,10 @@ function TeacherForm() {
 
     setScheduleItems(newArray);
   }
+
   return (
     <div id="page-teacher-form" className="container">
+      <HeaderFix title="Dar aula" />
       <PageHeader
         title="Que incrível que você quer dar aulas"
         description="O primeiro passo é preencher esse formulário de inscrição."
@@ -72,26 +83,24 @@ function TeacherForm() {
           <fieldset>
             <legend>Seus dados</legend>
 
-            <Input
-              name="name"
-              label="Nome Completo"
-              value={name}
-              onChange={(e) => { setName(e.target.value) }}
-            />
+            <section id="profile">
+              <div id="profile-avatar">
+                <img src="https://avatars1.githubusercontent.com/u/47749249?s=460&u=9c6deccd060caa4aa48381692fda430ab15af8de&v=4" alt="Igor" />
+                <div>
+                  <h3>Igor Rodrigues</h3>
+                  <small>Programação</small>
+                </div>
+              </div>
+              <div>
+                <Input
+                  name="whatsapp"
+                  label="Whatsapp"
+                  value={whatsapp}
+                  onChange={(e) => { handleChangeWhatsapp(e.target.value) }}
+                />
+              </div>
+            </section>
 
-            <Input
-              name="avatar"
-              label="Avatar"
-              value={avatar}
-              onChange={(e) => { setAvatar(e.target.value) }}
-            />
-
-            <Input
-              name="whatsapp"
-              label="Whatsapp"
-              value={whatsapp}
-              onChange={(e) => { setWhatsapp(e.target.value) }}
-            />
 
             <Textarea
               name="bio"
@@ -126,16 +135,16 @@ function TeacherForm() {
               name="cost"
               label="Custo da sua hora por aula"
               value={cost}
-              onChange={(e) => { setCost(e.target.value) }}
+              onChange={(e) => { handleChangeCost(e.target.value) }}
             />
 
           </fieldset>
           <fieldset>
             <legend>
               Horários disponíveis
-            <button type="button" onClick={addNewScheduleItem}>
-                + Novo horário
-          </button>
+              <button type="button" onClick={addNewScheduleItem}>
+                + Novo
+              </button>
             </legend>
             {scheduleItems.map((scheduleItem, index) => {
               return (
