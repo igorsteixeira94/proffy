@@ -38,6 +38,11 @@
   margin: 3.2rem auto;
   width: 90%;
 }
+#page-teacher-list main p#teacher-zero{
+  text-align: center;
+  width: 30rem;
+  margin: 5.6rem auto;
+}
 /*Breakpoint*/
 @media (min-width:700px) {
   #page-teacher-list{
@@ -85,6 +90,9 @@
 
   .teacher-item footer button img{
     margin-right: 1.6rem;
+  }
+  #page-teacher-list .page-header .header-content div#emoji{
+    margin-top:5rem;
   }
 
   

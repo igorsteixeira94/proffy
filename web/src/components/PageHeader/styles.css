@@ -16,6 +16,25 @@
   margin: 3.2rem auto;
 }
 
+.page-header .header-content > div:first-child{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.page-header .header-content div#emoji{
+  display: none;
+  font-size: 32px;
+  color:var(--color-text-message);
+}
+.page-header .header-content div#emoji p{
+  font-size: 32px;
+  margin:0;
+  margin-right: 1.6rem;
+}
+.page-header .header-content div#emoji small{
+  font-size: 12px;
+}
+
 .page-header .header-content strong{
   font: 700 3.6rem Archivo;
   line-height: 4.2rem;
@@ -26,9 +45,9 @@
   max-width: 30rem;
   font-size: 1.6rem;
   line-height: 2.6rem;
-
+  margin-top:2.6rem;
   color: var(--color-text-in-primary);
-  margin-top: 2.4rem;
+
 }
 
 @media(min-width:700px){
@@ -45,11 +64,17 @@
     margin: 0 auto;
     padding-bottom: 48px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .page-header .header-content strong{
     max-width: 350px;
+  }
+  .page-header .header-content div#emoji{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 13rem;
   }
 }

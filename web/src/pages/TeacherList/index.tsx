@@ -7,6 +7,7 @@ import TeacherItem, { Teacher } from '../../components/TeacherItem';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import api from '../../services/api';
+import HeaderFix from '../../components/HeaderFix';
 
 function TeacherList() {
   const [teachers, setTeachers] = useState([]);
@@ -33,7 +34,12 @@ function TeacherList() {
 
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader title="Estes são os proffys disponíveis">
+      <HeaderFix title="Estudar"/>
+      <PageHeader 
+      title="Estes são os proffys disponíveis"
+      emoji="&#129299;"
+      message={[0,' ','Proffys !']}
+      >
         <form id="search-teachers" onSubmit={searchTeachers}>
           <Select
             name="subject"
@@ -82,9 +88,10 @@ function TeacherList() {
       </PageHeader>
       <main>
         {
-          teachers.map((teacher: Teacher) => {
-            return <TeacherItem key={teacher.id} teacher={teacher}></TeacherItem>
-          })
+          teachers.length !== 0 ? teachers.map((teacher: Teacher) => {
+             return <TeacherItem key={teacher.id} teacher={teacher}></TeacherItem>
+          }) :  <p id="teacher-zero">Nenhum professor encontrado com sua pesquisa.</p>
+
         }
 
       </main>

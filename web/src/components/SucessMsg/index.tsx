@@ -5,22 +5,22 @@ import { Link } from 'react-router-dom';
 
 interface SucessMsgProps{
     title:string,
-    description:string
+    description:string,
+    button:{
+        name:string,
+        to:string
+    }
 }
 
-const SucessMsg:React.FC<SucessMsgProps> = ({title, description})=>{
+const SucessMsg:React.FC<SucessMsgProps> = ({title, description,button})=>{
     return(
         <div id="container-sucess" >
             <img src={sucessIcon} alt="Sucesso"/>
             <h1>{title}!</h1>
             <p>{description}</p>
-            <Link to="/">Fazer login</Link>
+            <Link to={button.to}>{button.name}</Link>
         </div>
         );
 };
 
 export default SucessMsg;
-/*
-<h1>Cadastro concluído!</h1>
-            <p>Agora você faz parte da plataforma da Proffy. Tenha uma ótima experiência</p>
-        */

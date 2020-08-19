@@ -11,9 +11,9 @@ a{
 }
 
 /*Estilização da capa de login*/
-#logo{
+#container-reset-password #logo{
 
-    height: 50vh;
+    height: 60vh;
     width: 100vw;   
     background:var(--color-primary-dark) url(../../assets/images/success-background.svg) center no-repeat;
     background-size: contain;
@@ -49,6 +49,7 @@ img#back {
 #form-reset{
     width: 100vw;
     padding: 0 3.2rem;
+    height: 40vh;
 
 }
 #form-reset form h3{
@@ -112,16 +113,16 @@ a#btn-reset-password:hover{
         margin: 0 auto;
     }
 
-    #logo{
+    #container-reset-password #logo{
         height: 100vh;
     }
 
-    #logo img{
+    #container-reset-password #logo img{
         width: 30rem;
         height: 15rem;
     }
 
-    #form-reset form h3{
+    #container-reset-password #form-reset form h3{
         margin-bottom: 2.1rem;
     }
 }

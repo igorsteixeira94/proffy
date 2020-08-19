@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Redirect } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
@@ -33,7 +33,8 @@ function TeacherForm() {
 
   function handleCreateClass(e: FormEvent) {
     e.preventDefault();
-
+    history.push('/give-classes-sucess');
+/*
     api.post('classes', {
       name,
       avatar,
@@ -50,6 +51,7 @@ function TeacherForm() {
     }).catch(() => {
       alert('Erro no cadastro!');
     });
+*/
   }
 
   function handleChangeWhatsapp(value: string) {
@@ -76,6 +78,9 @@ function TeacherForm() {
       <PageHeader
         title="Que incrível que você quer dar aulas"
         description="O primeiro passo é preencher esse formulário de inscrição."
+        emoji="&#128640;"
+        message={['Prepare-se!',<br/>,'Vai ser Foda']}
+        
       />
 
       <main>

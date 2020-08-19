@@ -11,7 +11,7 @@ a{
 }
 
 /*Estilização da capa de login*/
-#logo{
+#container-register #logo{
 
     height: 50vh;
     width: 100vw;   
@@ -124,16 +124,16 @@ a#register:hover{
         margin: 0 auto;
     }
 
-    #logo{
+    #container-register #logo{
         height: 100vh;
     }
 
-    #logo img{
+    #container-register #logo img{
         width: 30rem;
         height: 15rem;
     }
 
-    #form-register form h3{
+    #container-register #form-register form h3{
         margin-bottom: 2.1rem;
     }
 }

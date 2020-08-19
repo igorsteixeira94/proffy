@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import RegisterSucess from './pages/RegisterSucess';
 import ResetPassword from './pages/ResetPassword';
 import ResetPassSucess from './pages/ResetPassSucess';
+import TeacherFormSucess from './pages/TeachFormSucess';
 
 function Routes() {
   return (
@@ -19,6 +20,7 @@ function Routes() {
       <Route path="/register-sucess" component={RegisterSucess} />
       <Route path="/study" component={TeacherList} />
       <Route path="/give-classes" component={TeacherForm} />
+      <Route path="/give-classes-sucess" component={TeacherFormSucess} />
       <Route path="/reset-password" component={ResetPassword} />
       <Route path="/reset-password-sucess" component={ResetPassSucess} />
 
