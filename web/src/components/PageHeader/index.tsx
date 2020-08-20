@@ -3,7 +3,7 @@ import React from 'react';
 import "./styles.css"
 
 interface PageHeaderProps {
-  title: string;
+  title?: string;
   description?: string;
   emoji?: string,
   message?: any[]
@@ -13,7 +13,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
   return (
     <header className="page-header" >
       <div className="header-content">
-        <div>
+        <div id="title">
         <strong>{props.title}</strong>
         {props.description && <p>{props.description}</p>}
         </div>

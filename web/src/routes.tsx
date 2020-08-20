@@ -10,18 +10,23 @@ import RegisterSucess from './pages/RegisterSucess';
 import ResetPassword from './pages/ResetPassword';
 import ResetPassSucess from './pages/ResetPassSucess';
 import TeacherFormSucess from './pages/TeachFormSucess';
+import Profile from './pages/Profile';
 
 function Routes() {
   return (
     <BrowserRouter>
       <Route path="/" exact component={Login} />
+      
       <Route path="/landing" component={Landing} />
       <Route path="/register" component={Register} />
-      <Route path="/register-sucess" component={RegisterSucess} />
       <Route path="/study" component={TeacherList} />
+      <Route path="/profile" component={Profile} />
+     
+      <Route path="/register-sucess" component={RegisterSucess} />
       <Route path="/give-classes" component={TeacherForm} />
-      <Route path="/give-classes-sucess" component={TeacherFormSucess} />
       <Route path="/reset-password" component={ResetPassword} />
+      
+      <Route path="/give-classes-sucess" component={TeacherFormSucess} />
       <Route path="/reset-password-sucess" component={ResetPassSucess} />
 
 
