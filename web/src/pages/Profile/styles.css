@@ -51,29 +51,7 @@
     padding-top: 4.8rem;
     overflow: hidden;
   }
-  #page-profile-form main section#profile{
-    display: flex;
-    flex-direction: column;
-  }
-  #page-profile-form main section#profile #profile-avatar{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.4rem;
-  
-  }
-  #page-profile-form main section#profile h3{
-    font-family: Archivo;
-    color: var(--color-text-title);
-   
-  }
-  
-  #page-profile-form main section#profile img{
-    width: 6.4rem;
-    height: 6.4rem;
-    border-radius: 5rem;
-    margin-right: 1.6rem ;
-  }
-  
+
   #page-profile-form main label{
     color: var(--color-text-complement);
   }
@@ -81,6 +59,20 @@
   #page-profile-form main fieldset{
     border: 0;
     padding: 0 2.4rem;
+  }
+
+  #page-profile-form main section#profile{
+    display: grid;
+    grid-template-areas: 
+    "nome" "sobrenome"
+    "email" "whatsapp"
+    ;
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  #page-profile-form main section#profile .input-block{
+    margin-top: 0;
   }
   #page-profile-form main .schedule-item{
     display: grid;
@@ -183,6 +175,7 @@
       grid-template-areas: 
       "dia dia"
       "from to";
+      
     }
   }
   @media(min-width:700px){
@@ -198,6 +191,15 @@
     #page-profile-form main fieldset{
       padding: 0 6.4rem;
     }
+
+    #page-profile-form main section#profile{
+      grid-template-areas: 
+      "nome sobrenome"
+      "email whatsapp"
+      ;
+
+    }
+
   
     #page-profile-form main footer{
       padding: 4.0rem 6.4rem;
@@ -217,15 +219,7 @@
       grid-template-areas: 
       "dia dia from to";
     }
-    #page-profile-form main section#profile{
-      flex-direction: row;
-      justify-content: space-between;
-      max-width: 100%;
-    }
-    #page-profile-form main section#profile #profile-avatar{
-      width: 90%;
-    }
-    
+
     #page-profile-form .page-header{
         background-image: url(../../assets/images/horizontal-background.svg);
         background-size: contain;

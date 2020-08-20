@@ -24,10 +24,13 @@ function Landing() {
     <div id="page-landing">
       <div id="page-landing-header">
         <div className="header-user container-landing">
-          <div id="profile">
-            <img src="https://avatars1.githubusercontent.com/u/47749249?s=460&u=9c6deccd060caa4aa48381692fda430ab15af8de&v=4" alt="Igor" />
-            <small>Igor Rodrigues</small>
-          </div>
+          <Link to="/profile">
+            <div id="profile">
+              <img src="https://avatars1.githubusercontent.com/u/47749249?s=460&u=9c6deccd060caa4aa48381692fda430ab15af8de&v=4" alt="Igor" />
+              <small>Igor Rodrigues</small>
+            </div>
+          </Link>
+
           <Link to="/" id="btn-exit">
             <img src={exitIcon} alt="Sair" />
           </Link>
@@ -63,7 +66,7 @@ function Landing() {
 
         <span className="total-connections">
           Total de {totalConnections} conexões<br /> já realizadas {' '}
-            <img src={purpleHeartIcon} alt="Coração roxo" />
+          <img src={purpleHeartIcon} alt="Coração roxo" />
         </span>
       </div>
 
