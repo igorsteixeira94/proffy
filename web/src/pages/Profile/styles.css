@@ -79,7 +79,8 @@
     grid-template-areas: 
     "dia"
     "from"
-    "to";
+    "to"
+    "delete";
     gap: 1.6rem;
   }
   #page-profile-form main .schedule-item .select-block{
@@ -126,6 +127,34 @@
   
   #page-profile-form main fieldset .select-block + .input-block{
     margin-top: 2.4rem;
+  }
+
+  #page-profile-form .schedule-item #btn-excluir{
+    color:red;
+    border: 0;
+    background: none;
+    text-align: center;
+  }
+  #page-profile-form .schedule-item fieldset.delete {
+    border-top: 1px solid var(--color-line-in-white);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
+    grid-area: delete;
+  }
+  #page-profile-form .schedule-item fieldset.delete legend{
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding: 5px 10px;
+    display: block;
+    width: auto;
+    color:red;
+    font: 700 1.2rem Archivo;
+    
+    cursor: pointer;
   }
   
   #page-profile-form main footer{
@@ -174,7 +203,8 @@
   
       grid-template-areas: 
       "dia dia"
-      "from to";
+      "from to"
+      "delete delete";
       
     }
   }
@@ -217,7 +247,8 @@
     #page-profile-form main .schedule-item{
   
       grid-template-areas: 
-      "dia dia from to";
+      "dia dia from to"
+      "delete delete delete delete";
     }
 
     #page-profile-form .page-header{
